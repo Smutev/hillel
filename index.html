@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class='modal' id="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Please confirm!</h2>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>This is the modal</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button type="button" class="modal-btn btn btn-success btn-lg" data-target="#modal" data-toggle="modal">Show
+        modal</button>
+
+    <div class="container fade show hidden alert-block">
+        <div class="row">
+            <div class="col">
+                <div class='alert alert-danger alert-dismissable fade show'>
+                    I'm a alert!
+                </div>
+            </div>
+        </div>
+    </div>
+    <button type="button" class="alert-btn btn btn-danger btn-lg" data-toggle="tooltip" data-placement="left"
+        title="Some tooltip">Show alert</button>
+
+    <div class="birthday"></div>
+    <div class="user-birthday" name="form">
+        <p>Enter your B-day:</p>
+       <input class = 'data' type="date">
+        <button type="button" class="submit-date btn btn-primary">Do magic!</button>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/moment/min/moment-with-locales.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+.hidden {
+    display: none;
+}
+.modal-btn, .alert-btn {
+  display: block;
+  margin: 20px auto;
+}
+.birthday, .user-birthday {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+input {
+    border-radius: 20px;
+    border: 1px solid black;
+    text-align: center;
+    min-width: 100px;
+}
+input::placeholder{
+    text-align: center;
+}
